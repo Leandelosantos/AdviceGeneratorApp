@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    /* height: 100%; */
+    background-color: hsl(218, 23%, 16%);
+}
+
+.appContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16%;
+}
+
+.cardContainer {
+    display: flex;
+    width: 32%;
+    height: auto;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    flex-direction: column;
+    
+}
+
+h6 {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    padding-top: 4%;
+}
+
+p {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 5% 9% 9%;
+    
+}
+
+.img {
+    padding: 0 0 13% 0;
+}
+
+.dadoContainer {
+    border-radius: 30px;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20.6%;
+}
+.dadoContainer:hover{
+    filter: drop-shadow(1px 1px 15px hsl(150, 100%, 66%));
+}
+
+.dado {
+    cursor: pointer;
+}
+
