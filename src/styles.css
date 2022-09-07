@@ -21,8 +21,9 @@ body {
 
 .cardContainer {
     display: flex;
-    width: 32%;
-    height: auto;
+    position: static;
+    width: 600px;
+    height: 400px;
     background-color: hsl(217, 19%, 24%);
     border-radius: 20px;
     border: none;
@@ -36,22 +37,22 @@ body {
 h6 {
     color: hsl(150, 100%, 66%);
     letter-spacing: 3px;
-    padding-top: 4%;
 }
 
 p {
     color: white;
     font-size: 28px;
     text-align: center;
-    padding: 5% 9% 9%;
-    
+    width: 500px;
+    margin: 20px 0 15px;
 }
 
 .img {
-    padding: 0 0 13% 0;
+    margin: 20px 0 24px 0;
 }
 
 .dadoContainer {
+    height: auto;
     border-radius: 30px;
     background-color: hsl(150, 100%, 66%);
     padding: 1%;
@@ -59,7 +60,7 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 20.6%;
+    top: 675px;
 }
 .dadoContainer:hover{
     filter: drop-shadow(1px 1px 15px hsl(150, 100%, 66%));
@@ -69,3 +70,23 @@ p {
     cursor: pointer;
 }
 
+@media (max-width: 375px) {
+    
+    .cardContainer {
+        width: 350px;
+        height: 400px;
+    }
+
+    p {
+        width: 300px;
+    }
+
+    .dadoContainer {
+        top: 482px;
+        padding: 5%;
+    }
+
+    .appContainer {
+        margin-top: 30%;
+    }
+}
