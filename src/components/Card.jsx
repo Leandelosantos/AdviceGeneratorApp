@@ -29,7 +29,7 @@ export const Card = () => {
 
   return (
     <div className="cardContainer">
-      <h6>ADVICE #{id} </h6>
+      <h6>ADVICEEEEEEEEEE #{id} </h6>
       <p>"{advice}"</p>
       <img
         className="img"
