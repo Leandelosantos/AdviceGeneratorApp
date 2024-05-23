@@ -1,92 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
-    /* height: 100%; */
-    background-color: hsl(218, 23%, 16%);
+  /* height: 100%; */
+  background-color: hsl(218, 23%, 16%);
 }
 
 .appContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16%;
 }
 
 .cardContainer {
-    display: flex;
-    position: static;
-    width: 600px;
-    height: 400px;
-    background-color: hsl(217, 19%, 24%);
-    border-radius: 20px;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-    flex-direction: column;
-    
+  display: flex;
+  position: static;
+  width: 600px;
+  height: 400px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  flex-direction: column;
 }
 
 h6 {
-    color: hsl(150, 100%, 66%);
-    letter-spacing: 3px;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
 }
 
 p {
-    color: white;
-    font-size: 28px;
-    text-align: center;
-    width: 500px;
-    margin: 20px 0 15px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  width: 500px;
+  margin: 20px 0 15px;
 }
 
 .img {
-    margin: 20px 0 24px 0;
+  margin: 20px 0 24px 0;
+}
+
+@keyframes vibrar {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .dadoContainer {
-    height: auto;
-    border-radius: 30px;
-    background-color: hsl(150, 100%, 66%);
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 675px;
+  height: auto;
+  border-radius: 30px;
+  background-color: hsl(150, 100%, 66%);
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 675px;
 }
-.dadoContainer:hover{
-    filter: drop-shadow(1px 1px 15px hsl(150, 100%, 66%));
+
+.dadoContainer:hover {
+  filter: drop-shadow(1px 1px 15px hsl(150, 100%, 66%));
+  animation: vibrar 0.9s ease-in-out infinite;
 }
 
 .dado {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
-    
-    .cardContainer {
-        width: 350px;
-        height: 400px;
-    }
+  .cardContainer {
+    width: 350px;
+    height: 400px;
+  }
 
-    p {
-        width: 300px;
-    }
+  p {
+    width: 300px;
+  }
 
-    .dadoContainer {
-        top: 482px;
-        padding: 5%;
-    }
+  .dadoContainer {
+    top: 482px;
+    padding: 5%;
+  }
 
-    .appContainer {
-        margin-top: 30%;
-    }
+  .appContainer {
+    margin-top: 30%;
+  }
 }
