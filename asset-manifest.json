@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RitaQuotes/static/css/main.fa2120b8.css",
-    "main.js": "/RitaQuotes/static/js/main.44bcac56.js",
-    "index.html": "/RitaQuotes/index.html",
-    "static/media/icon-dice.svg": "/RitaQuotes/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
-    "static/media/pattern-divider-desktop.svg": "/RitaQuotes/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
-    "static/media/pattern-divider-mobile.svg": "/RitaQuotes/static/media/pattern-divider-mobile.aca38726412164df099c43d4f2fed72e.svg",
-    "main.fa2120b8.css.map": "/RitaQuotes/static/css/main.fa2120b8.css.map",
-    "main.44bcac56.js.map": "/RitaQuotes/static/js/main.44bcac56.js.map"
+    "main.css": "/AdviceGeneratorApp/static/css/main.fa2120b8.css",
+    "main.js": "/AdviceGeneratorApp/static/js/main.1c6614f8.js",
+    "index.html": "/AdviceGeneratorApp/index.html",
+    "static/media/icon-dice.svg": "/AdviceGeneratorApp/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
+    "static/media/pattern-divider-desktop.svg": "/AdviceGeneratorApp/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
+    "static/media/pattern-divider-mobile.svg": "/AdviceGeneratorApp/static/media/pattern-divider-mobile.aca38726412164df099c43d4f2fed72e.svg",
+    "main.fa2120b8.css.map": "/AdviceGeneratorApp/static/css/main.fa2120b8.css.map",
+    "main.1c6614f8.js.map": "/AdviceGeneratorApp/static/js/main.1c6614f8.js.map"
   },
   "entrypoints": [
     "static/css/main.fa2120b8.css",
-    "static/js/main.44bcac56.js"
+    "static/js/main.1c6614f8.js"
   ]
 }
