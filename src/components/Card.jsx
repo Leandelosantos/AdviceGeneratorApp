@@ -5,13 +5,25 @@ import { useState } from "react";
 //import { getQuote } from '../helpers/getQuote'
 
 export const Card = () => {
-  const [newQuote, setNewQuote] = useState("");
+  //Original
+
+  //const [newQuote, setNewQuote] = useState({});
 
   // const getNewQuote = async() => {
   //     const newQuote = await getQuote();
   //     setNewQuote(newQuote)
   //     return newQuote
   // }
+
+  //   const onQuote = () => {
+  //     getNewQuote();
+  //   };
+
+  //const { id, advice } = newQuote;
+
+  //Rita's Says
+
+  const [newQuote, setNewQuote] = useState("");
 
   const frases = [
     "Disculpen chicos, justo windows decidio meterme un update.",
@@ -21,21 +33,19 @@ export const Card = () => {
     "Perdon chicos, estoy volviendo a casa, vayan haciendo el ejercicio 78",
     "Esperen que me paso a la pc que estoy desde el celu con datos",
     "Disculpen el desorden, me estan cambiando un caño",
+    "Los quiero escuchar mas a ustedes",
   ];
 
-  const getNewQuote = () => {
-    const randomNumber = Math.floor(Math.random() * 7);
+  const getNuevaFrase = () => {
+    const randomNumber = Math.floor(Math.random() * 8);
     const newQuote = frases[randomNumber];
-    console.log(newQuote);
     setNewQuote(newQuote);
     return newQuote;
   };
 
   const onQuote = () => {
-    getNewQuote();
+    getNuevaFrase();
   };
-
-  //const { id, advice } = newQuote;
 
   return (
     <div className="cardContainer">
