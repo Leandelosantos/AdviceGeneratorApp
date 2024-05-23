@@ -5,7 +5,7 @@ import { useState } from "react";
 //import { getQuote } from '../helpers/getQuote'
 
 export const Card = () => {
-  const [newQuote, setNewQuote] = useState({});
+  const [newQuote, setNewQuote] = useState("");
 
   // const getNewQuote = async() => {
   //     const newQuote = await getQuote();
