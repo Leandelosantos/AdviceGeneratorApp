@@ -3,7 +3,6 @@ import svgMobile from "../images/pattern-divider-mobile.svg";
 import dado from "../images/icon-dice.svg";
 import { useState } from "react";
 //import { getQuote } from '../helpers/getQuote'
-import frases from "../frases.js";
 
 export const Card = () => {
   const [newQuote, setNewQuote] = useState({});
@@ -14,10 +13,21 @@ export const Card = () => {
   //     return newQuote
   // }
 
+  const frases = [
+    "Disculpen chicos, justo windows decidio meterme un update.",
+    "Hoy el wifi esta terrible, estoy colgada del celu con datos.",
+    "Pedi un uber, se retraso y aca estamos...disculpen chicos.",
+    "Estan trabajando en casa, asi que me vine al cafe de la esquina.",
+    "Perdon chicos, estoy volviendo a casa, vayan haciendo el ejercicio 78",
+    "Esperen que me paso a la pc que estoy desde el celu con datos",
+    "Disculpen el desorden, me estan cambiando un caño",
+  ];
+
   const getNewQuote = () => {
-    const newQuote = frases[0];
+    const randomNumber = Math.floor(Math.random() * 7);
+    const newQuote = frases[randomNumber];
     console.log(newQuote);
-    setNewQuote();
+    setNewQuote(newQuote);
     return newQuote;
   };
 
@@ -25,12 +35,14 @@ export const Card = () => {
     getNewQuote();
   };
 
-  const { id, advice } = newQuote;
+  //const { id, advice } = newQuote;
 
   return (
     <div className="cardContainer">
-      <h6>ADVICEEEEEEEEEE #{id} </h6>
-      <p>"{advice}"</p>
+      {/* <h6>ADVICEEEEEEEEEE #{id} </h6>
+      <p>"{advice}"</p> */}
+      <h6>Rita's Says</h6>
+      <p>{newQuote}</p>
       <img
         className="img"
         srcSet={`${svgMobile} 295w, ${svg} 444`}
